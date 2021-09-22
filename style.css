@@ -6,12 +6,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-content: center;
   min-height: 100vh;
-  background: #dcdcdc;
+  background: #DCDCDC;
 }
 .filter {
   display: flex;
@@ -32,7 +33,7 @@
   background-color: #03a9f4;
   color: #fff;
 }
-.listPro {
+.list__Item {
   position: relative;
   width: 1200px;
   display: grid;
@@ -40,19 +41,19 @@
   grid-gap: 20px;
   padding: 20px;
 }
-.listPro .card {
+.list__Item .card {
   max-width: 250px;
   height: 430px;
   width: 100%;
   background: #fff;
 }
-.listPro .card .img__products {
+.list__Item .card .img__products {
   position: relative;
   width: 100%;
   height: 310px;
   overflow: hidden;
 }
-.listPro .card .img__products img {
+.list__Item .card .img__products img {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,36 +63,36 @@
   transition: all 0.5s ease-in-out;
   transform-origin: right;
 }
-.listPro .card:hover .img__products img {
+.list__Item .card:hover .img__products img {
   transform: scale(1.2);
 }
-.listPro .card .content {
+.list__Item .card .content {
   padding: 10px;
 }
-.listPro .card .content .product__title h3 {
+.list__Item .card .content .product__title h3 {
   font-size: 18px;
   font-weight: 500;
   color: #333;
   margin: 5px 0;
 }
-.listPro .card .content .price_rating {
+.list__Item .card .content .price_rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.listPro .card .content .price_rating h2 {
+.list__Item .card .content .price_rating h2 {
   font-size: 20px;
   color: #ff2020;
   font-weight: 500;
 }
-.listPro .card .content .price_rating .fa {
+.list__Item .card .content .price_rating .fa {
   color: #ffd513;
   cursor: pointer;
 }
-.listPro .card .content .price_rating .fa.grey {
+.list__Item .card .content .price_rating .fa.grey {
   color: #ccc;
 }
-.listPro .card:hover .action li {
+.list__Item .card:hover .action li {
   transform: translateX(0px);
 }
 .action {
@@ -114,7 +115,7 @@
   transition: transform 0.5s;
 }
 .action li:nth-child(2) {
-  transition-delay: 0.15s;
+  transition-delay: 0.2s;
 }
 .action li:nth-child(3) {
   transition-delay: 0.3s;
